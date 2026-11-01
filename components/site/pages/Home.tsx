@@ -5,9 +5,10 @@ import { jsonLd } from '@/lib/site/seo'
 import Rich from '../Rich'
 import Faq from '../Faq'
 import JsonLd from '../JsonLd'
+import Trusted from '../Trusted'
 import Contact from '../Contact'
 import { WaitlistButton } from '../Waitlist'
-
+import { trust } from '@/content/clients'
 export default function Home({ locale }: { locale: Locale }) {
   const d = getDict(locale), h = d.home, ui = d.ui, js = d.js, ar = ui.arrow
   return (
@@ -34,6 +35,8 @@ export default function Home({ locale }: { locale: Locale }) {
               <div className="on"><small>{h.ba.after.label}</small>{h.ba.after.items.map((x) => <span key={x}>{x}</span>)}</div></div>
             <span className="go">{h.a_go} {ar}</span></Link>
         </div></div></section>
+
+       <Trusted locale={locale} title={trust[locale].title} text={trust[locale].text} />
 
       <section id="markets" className="sec"><div className="wrap">
         <div className="sec-head"><h2><Rich html={h.mk_h} /></h2><p>{h.mk_p}</p></div>

@@ -229,3 +229,15 @@ html[dir=rtl] #wl-form input{text-align:start}
 
 .markets .card{min-height:150px;padding:26px}.markets h3{font-size:24px}
 .kicker-link{font-size:14px;color:var(--acc)}
+
+/* They trust us */
+.trust{padding:72px 0}.trust .sec-head{margin-bottom:0}
+.trust-row{list-style:none;margin:32px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:14px}
+.trust-row .chip{display:flex;align-items:center;justify-content:center;min-height:64px;padding:12px 24px;border-radius:16px;background:#fffdf9;border:1px solid var(--line)}
+.trust-row img{display:block;height:36px;width:auto;filter:grayscale(1);opacity:.8;transition:filter .2s,opacity .2s}
+.trust-row a:hover img{filter:none;opacity:1}
+.trust-row .wordmark{font-size:19px;font-weight:600;color:#0b1a15}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:32px}
+.quote{margin:0;padding:28px;border-radius:var(--r);background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:18px}
+.quote blockquote{margin:0;font-size:18px;line-height:1.6}
+.quote figcaption{display:flex;flex-direction:column;font-size:14px;color:var(--mut)}.quote figcaption b{color:var(--fg);font-weight:600}

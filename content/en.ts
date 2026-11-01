@@ -624,6 +624,9 @@ export const en = {
     "subj": "Enquiry from {t}",
     "go": "Learn more",
     "kick": "GCC markets"
-  }
+  },
+    "mk_p": "Marketing and AI consulting for businesses in Qatar, the UAE, Saudi Arabia, Kuwait, Bahrain and Oman.",
+    "trust_h": "They <em>trust us.</em>",
+    "trust_p": "Businesses across the GCC work with us on marketing and AI.",
 }
 export type Dict = typeof en
